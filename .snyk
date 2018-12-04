@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.12.0
+version: v1.13.1
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -9,3 +9,20 @@ patch:
   'npm:ms:20170412':
     - socket.io > socket.io-adapter > socket.io-parser > debug > ms:
         patched: '2018-06-01T07:55:19.990Z'
+  'npm:hoek:20180212':
+    - chokidar > fsevents > node-pre-gyp > hawk > hoek:
+        patched: '2018-12-04T04:18:02.797Z'
+    - chokidar > fsevents > node-pre-gyp > hawk > boom > hoek:
+        patched: '2018-12-04T04:18:02.797Z'
+    - chokidar > fsevents > node-pre-gyp > hawk > sntp > hoek:
+        patched: '2018-12-04T04:18:02.797Z'
+    - chokidar > fsevents > node-pre-gyp > hawk > cryptiles > boom > hoek:
+        patched: '2018-12-04T04:18:02.797Z'
+    - webpack > watchpack > chokidar > fsevents > node-pre-gyp > hawk > hoek:
+        patched: '2018-12-04T04:18:02.797Z'
+    - webpack > watchpack > chokidar > fsevents > node-pre-gyp > hawk > boom > hoek:
+        patched: '2018-12-04T04:18:02.797Z'
+    - webpack > watchpack > chokidar > fsevents > node-pre-gyp > hawk > sntp > hoek:
+        patched: '2018-12-04T04:18:02.797Z'
+    - webpack > watchpack > chokidar > fsevents > node-pre-gyp > hawk > cryptiles > boom > hoek:
+        patched: '2018-12-04T04:18:02.797Z'
