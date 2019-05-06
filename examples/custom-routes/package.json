@@ -2,11 +2,15 @@
   "name": "nuxt-custom-routes",
   "dependencies": {
     "axios": "latest",
-    "nuxt": "latest"
+    "nuxt": "latest",
+    "snyk": "^1.161.1"
   },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start"
-  }
+    "start": "nuxt start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
