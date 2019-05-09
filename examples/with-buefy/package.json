@@ -9,9 +9,9 @@
     "start": "nuxt start"
   },
   "dependencies": {
-    "buefy": "^0.5.4",
+    "buefy": "^0.7.2",
     "nuxt": "latest",
-    "vue": "~2.4.4"
+    "vue": "~2.5.17"
   },
   "devDependencies": {
     "node-sass": "^4.6.0",
