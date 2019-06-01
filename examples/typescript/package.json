@@ -2,7 +2,7 @@
   "version": "1.0.1",
   "private": true,
   "dependencies": {
-    "axios": "^0.16.1",
+    "axios": "^0.19.0",
     "gsap": "^1.19.1",
     "nuxt": "latest",
     "nuxt-class-component": "^1.0.3",
