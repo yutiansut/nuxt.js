@@ -4,11 +4,15 @@
   "dependencies": {
     "@nuxtjs/axios": "^4.4.0",
     "@nuxtjs/proxy": "^1.1.2",
-    "nuxt": "latest"
+    "nuxt": "latest",
+    "snyk": "^1.189.0"
   },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start"
-  }
+    "start": "nuxt start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
