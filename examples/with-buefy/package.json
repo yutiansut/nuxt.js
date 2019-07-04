@@ -6,15 +6,19 @@
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start"
+    "start": "nuxt start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "buefy": "^0.5.4",
     "nuxt": "latest",
-    "vue": "~2.4.4"
+    "vue": "~2.4.4",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "node-sass": "^4.6.0",
     "sass-loader": "^6.0.6"
-  }
+  },
+  "snyk": true
 }
