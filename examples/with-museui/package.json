@@ -1,12 +1,16 @@
 {
-	"name": "with-museui",
-	"dependencies": {
-		"nuxt": "latest",
-		"muse-ui": "latest"
-	},
-	"scripts": {
-		"dev": "nuxt",
-		"build": "nuxt build",
-		"start": "nuxt start"
-	}
+  "name": "with-museui",
+  "dependencies": {
+    "nuxt": "latest",
+    "muse-ui": "latest",
+    "snyk": "^1.189.0"
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
