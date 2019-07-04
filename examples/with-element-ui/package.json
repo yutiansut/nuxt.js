@@ -4,15 +4,19 @@
   "license": "MIT",
   "dependencies": {
     "element-ui": "^1.4.9",
-    "nuxt": "latest"
+    "nuxt": "latest",
+    "snyk": "^1.189.0"
   },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start"
+    "start": "nuxt start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "devDependencies": {
     "node-sass": "^4.6.0",
     "sass-loader": "^6.0.6"
-  }
+  },
+  "snyk": true
 }
