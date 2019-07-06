@@ -3,11 +3,15 @@
   "dependencies": {
     "cookie": "^0.3.1",
     "js-cookie": "^2.1.4",
-    "nuxt": "latest"
+    "nuxt": "latest",
+    "snyk": "^1.192.3"
   },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start"
-  }
+    "start": "nuxt start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
