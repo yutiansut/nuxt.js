@@ -2,11 +2,15 @@
   "name": "nuxt-custom-server",
   "dependencies": {
     "express": "^4.15.3",
-    "nuxt": "latest"
+    "nuxt": "latest",
+    "snyk": "^1.192.3"
   },
   "scripts": {
     "dev": "node server.js",
     "build": "nuxt build",
-    "start": "NODE_ENV=production node server.js"
-  }
+    "start": "NODE_ENV=production node server.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
