@@ -2,12 +2,16 @@
   "name": "nuxt-vue-apollo",
   "dependencies": {
     "@nuxtjs/apollo": "^2.1.1",
-    "nuxt": "latest"
+    "nuxt": "latest",
+    "snyk": "^1.192.3"
   },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
-  }
+    "generate": "nuxt generate",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
