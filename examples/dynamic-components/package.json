@@ -3,12 +3,16 @@
   "dependencies": {
     "chart.js": "^2.7.0",
     "nuxt": "latest",
-    "vue-chartjs": "^2.8.7"
+    "vue-chartjs": "^2.8.7",
+    "snyk": "^1.192.3"
   },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
-  }
+    "generate": "nuxt generate",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
