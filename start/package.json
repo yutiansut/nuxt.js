@@ -54,7 +54,7 @@
     "hash-sum": "^1.0.2",
     "chalk": "^2.3.0",
     "ansi-html": "^0.0.7",
-    "serialize-javascript": "^1.4.0",
+    "serialize-javascript": "^2.1.1",
     "etag": "^1.8.1",
     "fresh": "^0.5.2",
     "serve-static": "^1.13.1",
