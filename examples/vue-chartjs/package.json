@@ -5,11 +5,15 @@
     "chart.js": "^2.6.0",
     "moment": "^2.18.1",
     "nuxt": "latest",
-    "vue-chartjs": "^2.8.2"
+    "vue-chartjs": "^2.8.2",
+    "snyk": "^1.316.1"
   },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start"
-  }
+    "start": "nuxt start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
