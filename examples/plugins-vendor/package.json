@@ -4,11 +4,15 @@
     "axios": "^0.16.2",
     "mini-toastr": "^0.6.5",
     "nuxt": "latest",
-    "vue-notifications": "^0.8.0"
+    "vue-notifications": "^0.8.0",
+    "snyk": "^1.345.1"
   },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start"
-  }
+    "start": "nuxt start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
