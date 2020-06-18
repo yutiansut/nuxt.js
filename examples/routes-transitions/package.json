@@ -2,11 +2,15 @@
   "name": "nuxt-routes-transitions",
   "dependencies": {
     "axios": "^0.15.3",
-    "nuxt": "latest"
+    "nuxt": "latest",
+    "snyk": "^1.345.1"
   },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start"
-  }
+    "start": "nuxt start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
