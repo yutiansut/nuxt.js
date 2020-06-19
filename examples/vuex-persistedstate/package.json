@@ -2,11 +2,15 @@
   "name": "nuxt-vuex-store",
   "dependencies": {
     "nuxt": "latest",
-    "vuex-persistedstate": "^2.0.0"
+    "vuex-persistedstate": "^2.0.0",
+    "snyk": "^1.345.1"
   },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start"
-  }
+    "start": "nuxt start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
